@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="706d67f145b74df28e45509b403d45a9" Name="Diagram1">
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CCTC_CONG_TY" PointX="3" PointY="7.125" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CCTC_MO_HINH_CONG_TY" PointX="0.75" PointY="8.625" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CCTC_NHAN_VIEN" PointX="7.5" PointY="3.625" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CCTC_PHONG_BAN" PointX="5.25" PointY="10.625" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CN_CHI_TIET_NGHIEP_VU" PointX="7.5" PointY="13.75" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CN_NGHIEP_VU" PointX="5.25" PointY="14" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CN_NGHIEP_VU_NHAN_VIEN" PointX="9.75" PointY="8.5" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CN_NHOM_NGHIEP_VU" PointX="9.75" PointY="16.75" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.CN_NHOM_NGUOI_DUNG_NGHIEP_VU" PointX="12" PointY="16.875" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_HANG_SP" PointX="3" PointY="21.125" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_HANG_TON_KHO" PointX="7.5" PointY="7.5" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_KHO" PointX="5.25" PointY="7" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.HT_NGUOI_DUNG" PointX="5.25" PointY="2.875" Width="1.5" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_KHO__TRUC_THU__6D0D32F4" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__HT_NGUOI___MA_CO__09A971A2" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__NB_CONG_T__CONG___1273C1CD" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__NB_CONG_T__MO_HI__1367E606" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__NB_PHONG___MA_CO__164452B1" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__CCTC_NHAN__MA_PH__08B54D69" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__CCTC_NHAN__USERN__5224328E" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__CN_CHI_TI__ID_NG__5629CD9C" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__CN_NGHIEP__ID_CH__571DF1D5" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK_CN_NGHIEP_VU_NHAN_VIEN_HT_NGUOI_DUNG" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__CN_NHOM_N__ID_NH__1CBC4616" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_HANG_S__MA_NH__59FA5E80" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_HANG_T__MA_KH__5EBF139D" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_KHO__MA_KHO_C__619B8048" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.CN_CHI_TIET_NHOM_NGHIEP_VU" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_TONKHO_HANG" PointX="7.5" PointY="19.875" Width="1.5" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_TONKHO__MA_NH__4F47C5E3" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK_CN_NGHIEP_VU_CCTC_CONG_TY" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_HANG_HOA" PointX="5.25" PointY="18" Width="1.5" />
+        <EntityTypeShape EntityType="HOPLONG_DATABASEModel.DM_TAI_KHOAN_HACH_TOAN" PointX="3" PointY="17.25" Width="1.5" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_HANG_H__MA_NH__59063A47" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_HANG_T__MA_HA__5DCAEF64" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_TONKHO__MA_HA__4E53A1AA" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK_DM_HANG_HOA_DM_TAI_KHOAN_HACH_TOAN" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK_DM_HANG_HOA_DM_TAI_KHOAN_HACH_TOAN1" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK_DM_HANG_HOA_DM_TAI_KHOAN_HACH_TOAN2" />
+        <AssociationConnector Association="HOPLONG_DATABASEModel.FK__DM_TAI_KH__TK_CA__3D5E1FD2" />
+
+        </Diagram>
+
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
