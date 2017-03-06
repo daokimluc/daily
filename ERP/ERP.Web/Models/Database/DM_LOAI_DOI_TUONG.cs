@@ -12,13 +12,18 @@ namespace ERP.Web.Models.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class DM_HANG_TON_KHO
+    public partial class DM_LOAI_DOI_TUONG
     {
-        public string MA_HANG { get; set; }
-        public string MA_KHO { get; set; }
-        public int SL_TON { get; set; }
+        public DM_LOAI_DOI_TUONG()
+        {
+            this.DM_DOI_TUONG = new HashSet<DM_DOI_TUONG>();
+            this.KHO_NHAP_KHO = new HashSet<KHO_NHAP_KHO>();
+        }
     
-        public virtual DM_HANG_HOA DM_HANG_HOA { get; set; }
-        public virtual DM_KHO DM_KHO { get; set; }
+        public string MA_LOAI_DOI_TUONG { get; set; }
+        public string TEN_LOAI_DOI_TUONG { get; set; }
+    
+        public virtual ICollection<DM_DOI_TUONG> DM_DOI_TUONG { get; set; }
+        public virtual ICollection<KHO_NHAP_KHO> KHO_NHAP_KHO { get; set; }
     }
 }

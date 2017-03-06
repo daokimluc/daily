@@ -18,10 +18,12 @@ namespace ERP.Web.Models.Database
         {
             this.DM_HANG_TON_KHO = new HashSet<DM_HANG_TON_KHO>();
             this.DM_TONKHO_HANG = new HashSet<DM_TONKHO_HANG>();
+            this.KHO_CT_CHUYEN_KHO = new HashSet<KHO_CT_CHUYEN_KHO>();
+            this.KHO_CT_NHAP_KHO = new HashSet<KHO_CT_NHAP_KHO>();
+            this.KHO_CT_XUAT_KHO = new HashSet<KHO_CT_XUAT_KHO>();
         }
     
-        public string MA_HANG_HT { get; set; }
-        public string MA_HANG_NHAP { get; set; }
+        public string MA_HANG { get; set; }
         public string TEN_HANG { get; set; }
         public string MA_NHOM_HANG { get; set; }
         public string SERI { get; set; }
@@ -35,9 +37,12 @@ namespace ERP.Web.Models.Database
         public string TK_CHI_PHI { get; set; }
         public string XUAT_XU { get; set; }
     
-        public virtual DM_HANG_SP DM_HANG_SP { get; set; }
+        public virtual DM_NHOM_VTHH DM_NHOM_VTHH { get; set; }
         public virtual ICollection<DM_HANG_TON_KHO> DM_HANG_TON_KHO { get; set; }
         public virtual ICollection<DM_TONKHO_HANG> DM_TONKHO_HANG { get; set; }
+        public virtual ICollection<KHO_CT_CHUYEN_KHO> KHO_CT_CHUYEN_KHO { get; set; }
+        public virtual ICollection<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO { get; set; }
+        public virtual ICollection<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO { get; set; }
         public virtual DM_TAI_KHOAN_HACH_TOAN DM_TAI_KHOAN_HACH_TOAN { get; set; }
         public virtual DM_TAI_KHOAN_HACH_TOAN DM_TAI_KHOAN_HACH_TOAN1 { get; set; }
         public virtual DM_TAI_KHOAN_HACH_TOAN DM_TAI_KHOAN_HACH_TOAN2 { get; set; }

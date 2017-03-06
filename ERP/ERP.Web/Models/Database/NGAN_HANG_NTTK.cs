@@ -12,23 +12,29 @@ namespace ERP.Web.Models.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class CCTC_PHONG_BAN
+    public partial class NGAN_HANG_NTTK
     {
-        public CCTC_PHONG_BAN()
+        public NGAN_HANG_NTTK()
         {
-            this.CCTC_NHAN_VIEN = new HashSet<CCTC_NHAN_VIEN>();
             this.NGAN_HANG_CT_NTTK = new HashSet<NGAN_HANG_CT_NTTK>();
             this.NGAN_HANG_CT_UNC = new HashSet<NGAN_HANG_CT_UNC>();
         }
     
-        public string MA_PHONG_BAN { get; set; }
-        public string TEN_PHONG_BAN { get; set; }
-        public string SDT { get; set; }
-        public string MA_CONG_TY { get; set; }
-        public string GHI_CHU { get; set; }
+        public string SO_CHUNG_TU { get; set; }
+        public System.DateTime NGAY_HACH_TOAN { get; set; }
+        public System.DateTime NGAY_CHUNG_TU { get; set; }
+        public string MA_DOI_TUONG { get; set; }
+        public string NOP_VAO_TAI_KHOAN { get; set; }
+        public string LY_DO_THU { get; set; }
+        public string DIEN_GIAI_LY_DO_THU { get; set; }
+        public string NHAN_VIEN_THU { get; set; }
+        public decimal TONG_TIEN { get; set; }
+        public string NGUOI_LAP_BIEU { get; set; }
     
-        public virtual CCTC_CONG_TY CCTC_CONG_TY { get; set; }
-        public virtual ICollection<CCTC_NHAN_VIEN> CCTC_NHAN_VIEN { get; set; }
+        public virtual DM_DOI_TUONG DM_DOI_TUONG { get; set; }
+        public virtual DM_TK_NGAN_HANG_NOI_BO DM_TK_NGAN_HANG_NOI_BO { get; set; }
+        public virtual HT_NGUOI_DUNG HT_NGUOI_DUNG { get; set; }
+        public virtual HT_NGUOI_DUNG HT_NGUOI_DUNG1 { get; set; }
         public virtual ICollection<NGAN_HANG_CT_NTTK> NGAN_HANG_CT_NTTK { get; set; }
         public virtual ICollection<NGAN_HANG_CT_UNC> NGAN_HANG_CT_UNC { get; set; }
     }
