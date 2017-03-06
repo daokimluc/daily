@@ -17,6 +17,16 @@ namespace ERP.Web.Models.Database
         public HT_NGUOI_DUNG()
         {
             this.CN_NGHIEP_VU_NHAN_VIEN = new HashSet<CN_NGHIEP_VU_NHAN_VIEN>();
+            this.DM_KHACH_HANG = new HashSet<DM_KHACH_HANG>();
+            this.DM_NHA_CUNG_CAP = new HashSet<DM_NHA_CUNG_CAP>();
+            this.NGAN_HANG_NTTK = new HashSet<NGAN_HANG_NTTK>();
+            this.NGAN_HANG_UNC = new HashSet<NGAN_HANG_UNC>();
+            this.NGAN_HANG_NTTK1 = new HashSet<NGAN_HANG_NTTK>();
+            this.NGAN_HANG_UNC1 = new HashSet<NGAN_HANG_UNC>();
+            this.QUY_PHIEU_CHI = new HashSet<QUY_PHIEU_CHI>();
+            this.QUY_PHIEU_THU = new HashSet<QUY_PHIEU_THU>();
+            this.QUY_PHIEU_CHI1 = new HashSet<QUY_PHIEU_CHI>();
+            this.QUY_PHIEU_THU1 = new HashSet<QUY_PHIEU_THU>();
         }
     
         public string USERNAME { get; set; }
@@ -32,5 +42,15 @@ namespace ERP.Web.Models.Database
         public virtual CCTC_CONG_TY CCTC_CONG_TY { get; set; }
         public virtual CCTC_NHAN_VIEN CCTC_NHAN_VIEN { get; set; }
         public virtual ICollection<CN_NGHIEP_VU_NHAN_VIEN> CN_NGHIEP_VU_NHAN_VIEN { get; set; }
+        public virtual ICollection<DM_KHACH_HANG> DM_KHACH_HANG { get; set; }
+        public virtual ICollection<DM_NHA_CUNG_CAP> DM_NHA_CUNG_CAP { get; set; }
+        public virtual ICollection<NGAN_HANG_NTTK> NGAN_HANG_NTTK { get; set; }
+        public virtual ICollection<NGAN_HANG_UNC> NGAN_HANG_UNC { get; set; }
+        public virtual ICollection<NGAN_HANG_NTTK> NGAN_HANG_NTTK1 { get; set; }
+        public virtual ICollection<NGAN_HANG_UNC> NGAN_HANG_UNC1 { get; set; }
+        public virtual ICollection<QUY_PHIEU_CHI> QUY_PHIEU_CHI { get; set; }
+        public virtual ICollection<QUY_PHIEU_THU> QUY_PHIEU_THU { get; set; }
+        public virtual ICollection<QUY_PHIEU_CHI> QUY_PHIEU_CHI1 { get; set; }
+        public virtual ICollection<QUY_PHIEU_THU> QUY_PHIEU_THU1 { get; set; }
     }
 }

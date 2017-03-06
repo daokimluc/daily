@@ -34,12 +34,42 @@ namespace ERP.Web.Models.Database
         public DbSet<CN_NGHIEP_VU_NHAN_VIEN> CN_NGHIEP_VU_NHAN_VIEN { get; set; }
         public DbSet<CN_NHOM_NGHIEP_VU> CN_NHOM_NGHIEP_VU { get; set; }
         public DbSet<CN_NHOM_NGUOI_DUNG_NGHIEP_VU> CN_NHOM_NGUOI_DUNG_NGHIEP_VU { get; set; }
-        public DbSet<DM_HANG_SP> DM_HANG_SP { get; set; }
-        public DbSet<DM_HANG_TON_KHO> DM_HANG_TON_KHO { get; set; }
-        public DbSet<DM_KHO> DM_KHO { get; set; }
-        public DbSet<HT_NGUOI_DUNG> HT_NGUOI_DUNG { get; set; }
-        public DbSet<DM_TONKHO_HANG> DM_TONKHO_HANG { get; set; }
+        public DbSet<DM_CHUNG_TU> DM_CHUNG_TU { get; set; }
+        public DbSet<DM_DOI_TUONG> DM_DOI_TUONG { get; set; }
         public DbSet<DM_HANG_HOA> DM_HANG_HOA { get; set; }
+        public DbSet<DM_HANG_TON_KHO> DM_HANG_TON_KHO { get; set; }
+        public DbSet<DM_KHACH_HANG> DM_KHACH_HANG { get; set; }
+        public DbSet<DM_KHO> DM_KHO { get; set; }
+        public DbSet<DM_LIEN_HE_KHACH_HANG> DM_LIEN_HE_KHACH_HANG { get; set; }
+        public DbSet<DM_LIEN_HE_NHA_CUNG_CAP> DM_LIEN_HE_NHA_CUNG_CAP { get; set; }
+        public DbSet<DM_LOAI_CHUNG_TU> DM_LOAI_CHUNG_TU { get; set; }
+        public DbSet<DM_LOAI_DOI_TUONG> DM_LOAI_DOI_TUONG { get; set; }
+        public DbSet<DM_LOAI_HANG_CUNG_CAP> DM_LOAI_HANG_CUNG_CAP { get; set; }
+        public DbSet<DM_LOAI_KHACH> DM_LOAI_KHACH { get; set; }
+        public DbSet<DM_LOAI_NHA_CUNG_CAP> DM_LOAI_NHA_CUNG_CAP { get; set; }
+        public DbSet<DM_LOAI_TK_NGAN_HANG> DM_LOAI_TK_NGAN_HANG { get; set; }
+        public DbSet<DM_NHA_CUNG_CAP> DM_NHA_CUNG_CAP { get; set; }
+        public DbSet<DM_NHOM_VTHH> DM_NHOM_VTHH { get; set; }
         public DbSet<DM_TAI_KHOAN_HACH_TOAN> DM_TAI_KHOAN_HACH_TOAN { get; set; }
+        public DbSet<DM_TK_NGAN_HANG_KH> DM_TK_NGAN_HANG_KH { get; set; }
+        public DbSet<DM_TK_NGAN_HANG_NCC> DM_TK_NGAN_HANG_NCC { get; set; }
+        public DbSet<DM_TK_NGAN_HANG_NOI_BO> DM_TK_NGAN_HANG_NOI_BO { get; set; }
+        public DbSet<DM_TONKHO_HANG> DM_TONKHO_HANG { get; set; }
+        public DbSet<HT_NGUOI_DUNG> HT_NGUOI_DUNG { get; set; }
+        public DbSet<KHO_CHUYEN_KHO> KHO_CHUYEN_KHO { get; set; }
+        public DbSet<KHO_CT_CHUYEN_KHO> KHO_CT_CHUYEN_KHO { get; set; }
+        public DbSet<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO { get; set; }
+        public DbSet<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO { get; set; }
+        public DbSet<KHO_NHAP_KHO> KHO_NHAP_KHO { get; set; }
+        public DbSet<KHO_XUAT_KHO> KHO_XUAT_KHO { get; set; }
+        public DbSet<NGAN_HANG_CHUYEN_TIEN_NOI_BO> NGAN_HANG_CHUYEN_TIEN_NOI_BO { get; set; }
+        public DbSet<NGAN_HANG_CT_NTTK> NGAN_HANG_CT_NTTK { get; set; }
+        public DbSet<NGAN_HANG_CT_UNC> NGAN_HANG_CT_UNC { get; set; }
+        public DbSet<NGAN_HANG_NTTK> NGAN_HANG_NTTK { get; set; }
+        public DbSet<NGAN_HANG_UNC> NGAN_HANG_UNC { get; set; }
+        public DbSet<QUY_CT_PHIEU_CHI> QUY_CT_PHIEU_CHI { get; set; }
+        public DbSet<QUY_CT_PHIEU_THU> QUY_CT_PHIEU_THU { get; set; }
+        public DbSet<QUY_PHIEU_CHI> QUY_PHIEU_CHI { get; set; }
+        public DbSet<QUY_PHIEU_THU> QUY_PHIEU_THU { get; set; }
     }
 }

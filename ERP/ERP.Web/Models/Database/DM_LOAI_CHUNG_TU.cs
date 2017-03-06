@@ -12,28 +12,20 @@ namespace ERP.Web.Models.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class CCTC_NHAN_VIEN
+    public partial class DM_LOAI_CHUNG_TU
     {
-        public CCTC_NHAN_VIEN()
+        public DM_LOAI_CHUNG_TU()
         {
-            this.KHO_CHUYEN_KHO = new HashSet<KHO_CHUYEN_KHO>();
+            this.DM_CHUNG_TU = new HashSet<DM_CHUNG_TU>();
             this.KHO_NHAP_KHO = new HashSet<KHO_NHAP_KHO>();
             this.KHO_XUAT_KHO = new HashSet<KHO_XUAT_KHO>();
-            this.KHO_XUAT_KHO1 = new HashSet<KHO_XUAT_KHO>();
         }
     
-        public string USERNAME { get; set; }
-        public string GIOI_TINH { get; set; }
-        public Nullable<System.DateTime> NGAY_SINH { get; set; }
-        public string QUE_QUAN { get; set; }
-        public string TRINH_DO_HOC_VAN { get; set; }
-        public string MA_PHONG_BAN { get; set; }
+        public string MA_LOAI_CHUNG_TU { get; set; }
+        public string TEN_LOAI_CHUNG_TU { get; set; }
     
-        public virtual CCTC_PHONG_BAN CCTC_PHONG_BAN { get; set; }
-        public virtual HT_NGUOI_DUNG HT_NGUOI_DUNG { get; set; }
-        public virtual ICollection<KHO_CHUYEN_KHO> KHO_CHUYEN_KHO { get; set; }
+        public virtual ICollection<DM_CHUNG_TU> DM_CHUNG_TU { get; set; }
         public virtual ICollection<KHO_NHAP_KHO> KHO_NHAP_KHO { get; set; }
         public virtual ICollection<KHO_XUAT_KHO> KHO_XUAT_KHO { get; set; }
-        public virtual ICollection<KHO_XUAT_KHO> KHO_XUAT_KHO1 { get; set; }
     }
 }

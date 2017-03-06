@@ -20,6 +20,23 @@ namespace ERP.Web.Models.Database
             this.DM_HANG_HOA1 = new HashSet<DM_HANG_HOA>();
             this.DM_HANG_HOA2 = new HashSet<DM_HANG_HOA>();
             this.DM_TAI_KHOAN_HACH_TOAN1 = new HashSet<DM_TAI_KHOAN_HACH_TOAN>();
+            this.KHO_CT_NHAP_KHO = new HashSet<KHO_CT_NHAP_KHO>();
+            this.KHO_CT_NHAP_KHO1 = new HashSet<KHO_CT_NHAP_KHO>();
+            this.KHO_CT_NHAP_KHO2 = new HashSet<KHO_CT_NHAP_KHO>();
+            this.KHO_CT_XUAT_KHO = new HashSet<KHO_CT_XUAT_KHO>();
+            this.KHO_CT_XUAT_KHO1 = new HashSet<KHO_CT_XUAT_KHO>();
+            this.KHO_CT_XUAT_KHO2 = new HashSet<KHO_CT_XUAT_KHO>();
+            this.NGAN_HANG_CHUYEN_TIEN_NOI_BO = new HashSet<NGAN_HANG_CHUYEN_TIEN_NOI_BO>();
+            this.NGAN_HANG_CT_NTTK = new HashSet<NGAN_HANG_CT_NTTK>();
+            this.NGAN_HANG_CT_UNC = new HashSet<NGAN_HANG_CT_UNC>();
+            this.NGAN_HANG_CHUYEN_TIEN_NOI_BO1 = new HashSet<NGAN_HANG_CHUYEN_TIEN_NOI_BO>();
+            this.NGAN_HANG_CT_NTTK1 = new HashSet<NGAN_HANG_CT_NTTK>();
+            this.NGAN_HANG_CT_UNC1 = new HashSet<NGAN_HANG_CT_UNC>();
+            this.QUY_CT_PHIEU_CHI = new HashSet<QUY_CT_PHIEU_CHI>();
+            this.QUY_CT_PHIEU_THU = new HashSet<QUY_CT_PHIEU_THU>();
+            this.QUY_CT_PHIEU_CHI1 = new HashSet<QUY_CT_PHIEU_CHI>();
+            this.QUY_CT_PHIEU_THU1 = new HashSet<QUY_CT_PHIEU_THU>();
+            this.QUY_CT_PHIEU_CHI2 = new HashSet<QUY_CT_PHIEU_CHI>();
         }
     
         public string SO_TK { get; set; }
@@ -34,5 +51,22 @@ namespace ERP.Web.Models.Database
         public virtual ICollection<DM_HANG_HOA> DM_HANG_HOA2 { get; set; }
         public virtual ICollection<DM_TAI_KHOAN_HACH_TOAN> DM_TAI_KHOAN_HACH_TOAN1 { get; set; }
         public virtual DM_TAI_KHOAN_HACH_TOAN DM_TAI_KHOAN_HACH_TOAN2 { get; set; }
+        public virtual ICollection<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO { get; set; }
+        public virtual ICollection<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO1 { get; set; }
+        public virtual ICollection<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO2 { get; set; }
+        public virtual ICollection<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO { get; set; }
+        public virtual ICollection<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO1 { get; set; }
+        public virtual ICollection<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO2 { get; set; }
+        public virtual ICollection<NGAN_HANG_CHUYEN_TIEN_NOI_BO> NGAN_HANG_CHUYEN_TIEN_NOI_BO { get; set; }
+        public virtual ICollection<NGAN_HANG_CT_NTTK> NGAN_HANG_CT_NTTK { get; set; }
+        public virtual ICollection<NGAN_HANG_CT_UNC> NGAN_HANG_CT_UNC { get; set; }
+        public virtual ICollection<NGAN_HANG_CHUYEN_TIEN_NOI_BO> NGAN_HANG_CHUYEN_TIEN_NOI_BO1 { get; set; }
+        public virtual ICollection<NGAN_HANG_CT_NTTK> NGAN_HANG_CT_NTTK1 { get; set; }
+        public virtual ICollection<NGAN_HANG_CT_UNC> NGAN_HANG_CT_UNC1 { get; set; }
+        public virtual ICollection<QUY_CT_PHIEU_CHI> QUY_CT_PHIEU_CHI { get; set; }
+        public virtual ICollection<QUY_CT_PHIEU_THU> QUY_CT_PHIEU_THU { get; set; }
+        public virtual ICollection<QUY_CT_PHIEU_CHI> QUY_CT_PHIEU_CHI1 { get; set; }
+        public virtual ICollection<QUY_CT_PHIEU_THU> QUY_CT_PHIEU_THU1 { get; set; }
+        public virtual ICollection<QUY_CT_PHIEU_CHI> QUY_CT_PHIEU_CHI2 { get; set; }
     }
 }

@@ -18,6 +18,10 @@ namespace ERP.Web.Models.Database
         {
             this.DM_HANG_TON_KHO = new HashSet<DM_HANG_TON_KHO>();
             this.DM_KHO1 = new HashSet<DM_KHO>();
+            this.KHO_CT_CHUYEN_KHO = new HashSet<KHO_CT_CHUYEN_KHO>();
+            this.KHO_CT_CHUYEN_KHO1 = new HashSet<KHO_CT_CHUYEN_KHO>();
+            this.KHO_CT_NHAP_KHO = new HashSet<KHO_CT_NHAP_KHO>();
+            this.KHO_CT_XUAT_KHO = new HashSet<KHO_CT_XUAT_KHO>();
         }
     
         public string MA_KHO { get; set; }
@@ -31,5 +35,9 @@ namespace ERP.Web.Models.Database
         public virtual ICollection<DM_HANG_TON_KHO> DM_HANG_TON_KHO { get; set; }
         public virtual ICollection<DM_KHO> DM_KHO1 { get; set; }
         public virtual DM_KHO DM_KHO2 { get; set; }
+        public virtual ICollection<KHO_CT_CHUYEN_KHO> KHO_CT_CHUYEN_KHO { get; set; }
+        public virtual ICollection<KHO_CT_CHUYEN_KHO> KHO_CT_CHUYEN_KHO1 { get; set; }
+        public virtual ICollection<KHO_CT_NHAP_KHO> KHO_CT_NHAP_KHO { get; set; }
+        public virtual ICollection<KHO_CT_XUAT_KHO> KHO_CT_XUAT_KHO { get; set; }
     }
 }

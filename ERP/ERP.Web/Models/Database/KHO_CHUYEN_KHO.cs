@@ -12,13 +12,14 @@ namespace ERP.Web.Models.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class DM_HANG_TON_KHO
+    public partial class KHO_CHUYEN_KHO
     {
-        public string MA_HANG { get; set; }
-        public string MA_KHO { get; set; }
-        public int SL_TON { get; set; }
+        public string SO_CHUNG_TU { get; set; }
+        public System.DateTime NGAY_CHUNG_TU { get; set; }
+        public System.DateTime NGAY_HACH_TOAN { get; set; }
+        public string DIEN_GIAI { get; set; }
+        public string NGUOI_LAP_PHIEU { get; set; }
     
-        public virtual DM_HANG_HOA DM_HANG_HOA { get; set; }
-        public virtual DM_KHO DM_KHO { get; set; }
+        public virtual CCTC_NHAN_VIEN CCTC_NHAN_VIEN { get; set; }
     }
 }
